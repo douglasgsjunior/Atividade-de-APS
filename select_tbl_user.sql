@@ -1,0 +1,1 @@
+SELECT * FROM db_lego.tbl_user;

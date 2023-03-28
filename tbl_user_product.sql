@@ -1,0 +1,18 @@
+CREATE TABLE db_lego.tbl_user (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(50) NOT NULL,
+  email VARCHAR(50) UNIQUE NOT NULL,
+  senha VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE db_lego.tbl_product (
+  id INT NOT NULL AUTO_INCREMENT,
+  lego_theme VARCHAR(50) NOT NULL,
+  lego_set VARCHAR(50) UNIQUE NOT NULL,
+  piece_count INT NOT NULL,
+  age_range TINYINT NOT NULL,
+  amount TINYINT NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (id)
+);
